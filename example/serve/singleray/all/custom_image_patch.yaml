@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/podTypes/0/podConfig/spec/containers/0/image
+  value: beomyeol/custom-ray-pytorch:2.0.0_1.12.1
+- op: replace
+  path: /spec/podTypes/1/podConfig/spec/containers/0/image
+  value: beomyeol/custom-ray-pytorch:2.0.0_1.12.1

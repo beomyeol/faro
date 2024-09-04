@@ -1,0 +1,87 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  namespace: k8s-ray
+  name: faro-account
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: faro-role-cluster
+rules:
+  # Framework: runtime observation of namespaces & CRDs (addition/deletion).
+  - apiGroups: [apiextensions.k8s.io]
+    resources: [customresourcedefinitions]
+    verbs: [list, watch]
+  - apiGroups: [""]
+    resources: [namespaces, nodes, pods]
+    verbs: [list, watch]
+
+  # Framework: admission webhook configuration management.
+  # - apiGroups: [admissionregistration.k8s.io]
+  #   resources: [validatingwebhookconfigurations, mutatingwebhookconfigurations]
+  #   verbs: [create, patch]
+
+  # Application: read-only
+  # - apiGroups: [ray.beomyeol.github.io]
+  #   resources: [clusterquotas]
+  #   verbs: [get, watch, list]
+  # - apiGroups: [metrics.k8s.io]
+  #   resources: [nodes, pods]
+  #   verbs: [list]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: k8s-ray
+  name: faro-role-namespaced
+rules:
+  # Framework: posting the events about the handlers progress/errors.
+  - apiGroups: [""]
+    resources: [events]
+    verbs: [create]
+
+  # Application
+  # - apiGroups: [ray.beomyeol.github.io]
+  #   resources: [clusterquotas]
+  #   verbs: [get, watch, list, create, delete, patch, update]
+  # - apiGroups: [ray.beomyeol.github.io]
+  #   resources: [clusterquotas/status]
+  #   verbs: [get, patch, update]
+  # - apiGroups: [ray.beomyeol.github.io]
+  #   resources: [clusterquotas/finalizers]
+  #   verbs: [update]
+
+  - apiGroups: [""]
+    resources: [pods, resourcequotas]
+    verbs: [get, list, watch, delete]
+  - apiGroups: [""]
+    resources: [services]
+    verbs: [list, watch, get]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: faro-rolebinding-cluster
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: faro-role-cluster
+subjects:
+  - kind: ServiceAccount
+    name: faro-account
+    namespace: k8s-ray
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  namespace: k8s-ray
+  name: faro-rolebinding-namespaced
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: faro-role-namespaced
+subjects:
+  - kind: ServiceAccount
+    name: faro-account

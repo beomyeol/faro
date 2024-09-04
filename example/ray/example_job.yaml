@@ -1,0 +1,19 @@
+# Job to run a Ray program in its own pod. Assumes that a Ray cluster is already
+# running.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: ray-test-job-
+  namespace: k8s-ray
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: ray
+          image: beomyeol/k8s-ray-job:latest
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 100m
+              memory: 512Mi

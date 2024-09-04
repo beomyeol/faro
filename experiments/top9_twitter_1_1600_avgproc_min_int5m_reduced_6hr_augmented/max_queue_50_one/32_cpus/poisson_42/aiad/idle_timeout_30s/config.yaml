@@ -1,0 +1,11 @@
+clusters: !include ../../../../../cluster_specs.yaml
+controller: autoscale
+controller_params:
+  autoscale_config: !include ../../../../../autoscale_config.yaml
+  cold_start_overhead_s: 35
+  hot_start_overhead_s: 3
+  policy_name: aiad
+inference_jobs: !include ../../../../job_specs.yaml
+load_specs: !include ../../../../../load_specs/poisson_42.yaml
+nodes: !include ../../../node_specs.yaml
+seed: 42

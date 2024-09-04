@@ -1,0 +1,4 @@
+policy_name: aiad
+autoscale_config: !include autoscale_config.yaml
+clusters: !include cluster_specs.yaml
+unit_time: 60

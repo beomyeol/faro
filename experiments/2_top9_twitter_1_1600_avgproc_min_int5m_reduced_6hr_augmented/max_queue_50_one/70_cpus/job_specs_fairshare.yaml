@@ -1,0 +1,140 @@
+- cluster_name: serve-cluster0
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster1
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster2
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster3
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster4
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster5
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster6
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster7
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster8
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster9
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster10
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster11
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster12
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster13
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster14
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster15
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster16
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster17
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster18
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml
+- cluster_name: serve-cluster19
+  latency_dist: !include ../../job_latency_specs.yaml
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 2
+  resources: !include ../../job_resources_specs.yaml

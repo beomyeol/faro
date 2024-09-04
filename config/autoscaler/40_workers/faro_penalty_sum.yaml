@@ -1,0 +1,24 @@
+policy_name: hybrid
+policies:
+- policy_name: pred_darts_utility
+  policy_params:
+    util_type: latency
+    mdc_percentile: 99
+    method: cobyla
+    processing_time: 180
+    aggregator: none
+    upscale_overhead: 65
+    window_size_s: 420
+    resource_limit: !include resources_limit.yaml
+    adjust: true
+    individually: false
+    latency_estimator: max
+    model_params: !include ../nhits_model.yaml
+    with_drop: true
+    drop_integrality: true
+    linear_penalty: true
+  autoscale_config: !include ../pred_autoscale_config.yaml
+- policy_name: ai
+  autoscale_config: !include ../autoscale_config.yaml
+clusters: !include ../cluster_specs.yaml
+unit_time: 60

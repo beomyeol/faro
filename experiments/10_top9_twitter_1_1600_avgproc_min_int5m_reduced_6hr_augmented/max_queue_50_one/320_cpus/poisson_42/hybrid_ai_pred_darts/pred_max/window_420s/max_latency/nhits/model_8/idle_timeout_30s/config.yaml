@@ -1,0 +1,21 @@
+clusters: !include ../../../../../../../../../../cluster_specs.yaml
+controller: hybrid
+controller_params:
+  cold_start_overhead_s: 35
+  hot_start_overhead_s: 3
+  input_rate_bin_size_s: 60
+  policies:
+  - autoscale_config: !include ../../../../../../../../../../pred_autoscale_config.yaml
+    policy_name: pred_darts
+    policy_params:
+      aggregator: max
+      latency_estimator: max
+      model_params: !include ../../../../../../../../../../model_params/darts/nhits/model_8.yaml
+      processing_time: 180
+      window_size_s: 420
+  - autoscale_config: !include ../../../../../../../../../../autoscale_config.yaml
+    policy_name: ai
+inference_jobs: !include ../../../../../../../../../job_specs.yaml
+load_specs: !include ../../../../../../../../../../load_specs/poisson_42.yaml
+nodes: !include ../../../../../../../../node_specs.yaml
+seed: 42

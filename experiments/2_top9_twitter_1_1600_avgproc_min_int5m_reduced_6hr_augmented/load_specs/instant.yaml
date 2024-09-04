@@ -1,0 +1,5 @@
+- type: json
+  params:
+    path: ../experiments/top9_twitter_1_1600_avgproc_min_int5m_reduced_6hr_augmented/input.json
+    instantly: true
+    unit_time: 60

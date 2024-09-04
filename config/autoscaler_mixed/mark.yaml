@@ -1,0 +1,15 @@
+policy_name: hybrid
+policies:
+- policy_name: pred_darts
+  policy_params:
+    processing_time: 180
+    cluster_processing_times: !include cluster_processing_time.yaml
+    aggregator: max
+    window_size_s: 420
+    latency_estimator: max
+    model_params: !include nhits_model.yaml
+  autoscale_config: !include pred_autoscale_config.yaml
+- policy_name: ai
+  autoscale_config: !include autoscale_config.yaml
+clusters: !include cluster_specs.yaml
+unit_time: 60

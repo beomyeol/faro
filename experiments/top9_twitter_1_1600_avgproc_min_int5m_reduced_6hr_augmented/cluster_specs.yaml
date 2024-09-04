@@ -1,0 +1,50 @@
+- name: serve-cluster0
+  worker: !include job_resources_specs.yaml
+  min_workers: 1
+  idle_timeout_s: 30
+  route_latency: !include route_latency_specs.yaml
+- name: serve-cluster1
+  worker: !include job_resources_specs.yaml
+  min_workers: 1
+  idle_timeout_s: 30
+  route_latency: !include route_latency_specs.yaml
+- name: serve-cluster2
+  worker: !include job_resources_specs.yaml
+  min_workers: 1
+  idle_timeout_s: 30
+  route_latency: !include route_latency_specs.yaml
+- name: serve-cluster3
+  worker: !include job_resources_specs.yaml
+  min_workers: 1
+  idle_timeout_s: 30
+  route_latency: !include route_latency_specs.yaml
+- name: serve-cluster4
+  worker: !include job_resources_specs.yaml
+  min_workers: 1
+  idle_timeout_s: 30
+  route_latency: !include route_latency_specs.yaml
+- name: serve-cluster5
+  worker: !include job_resources_specs.yaml
+  min_workers: 1
+  idle_timeout_s: 30
+  route_latency: !include route_latency_specs.yaml
+- name: serve-cluster6
+  worker: !include job_resources_specs.yaml
+  min_workers: 1
+  idle_timeout_s: 30
+  route_latency: !include route_latency_specs.yaml
+- name: serve-cluster7
+  worker: !include job_resources_specs.yaml
+  min_workers: 1
+  idle_timeout_s: 30
+  route_latency: !include route_latency_specs.yaml
+- name: serve-cluster8
+  worker: !include job_resources_specs.yaml
+  min_workers: 1
+  idle_timeout_s: 30
+  route_latency: !include route_latency_specs.yaml
+- name: serve-cluster9
+  worker: !include job_resources_specs.yaml
+  min_workers: 1
+  idle_timeout_s: 30
+  route_latency: !include route_latency_specs.yaml

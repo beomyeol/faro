@@ -1,0 +1,17 @@
+resources:
+  - "cluster1.yaml"
+  - "cluster2.yaml"
+  - "cluster3.yaml"
+  - "cluster4.yaml"
+  - "cluster5.yaml"
+
+patches:
+  - path: custom_image_patch.json
+    target:
+      kind: RayCluster
+  - path: idle_timeout_patch.yaml
+    target:
+      kind: RayCluster
+  - path: env_patch.yaml
+    target:
+      kind: RayCluster

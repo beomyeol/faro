@@ -1,0 +1,11 @@
+interval_s: 300.0
+upscale_delay_s: 60.0
+downscale_delay_s: 600.0
+metric: avg_latency
+target_metric: 720
+max_replicas: 100
+min_replicas: 1
+look_back_period_s: 30.0
+max_trials: 5
+backoff_s: 10.0
+# downscale_action_delay_s: 5

@@ -1,0 +1,6 @@
+- params:
+    path: ../experiments/top9_twitter_1_1600_avgproc_min_int5m_reduced_6hr_augmented/input.json
+    poisson: true
+    unit_time: 60
+    seed: 40
+  type: json

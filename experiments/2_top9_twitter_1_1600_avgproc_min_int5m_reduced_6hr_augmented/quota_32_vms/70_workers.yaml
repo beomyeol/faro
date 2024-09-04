@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  namespace: k8s-ray
+  name: k8s-ray-resources
+spec:
+  hard:
+    requests.cpu: 82350m  # 2000m (replayer) + 1000m (ray-operator) + 3350m (autoscaler) + 20000m (head) + 56000m(70*800m) (workers)
+    requests.memory: 384Gi

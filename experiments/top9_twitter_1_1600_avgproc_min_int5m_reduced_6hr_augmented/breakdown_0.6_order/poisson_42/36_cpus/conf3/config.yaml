@@ -1,0 +1,367 @@
+clusters:
+- idle_timeout_s: 30
+  min_workers: 1
+  name: serve-cluster0
+  route_latency:
+    params:
+      loc: 0.003485330525882586
+      scale: 0.000987812095765591
+      shape: 0.4807840738997673
+    type: lognorm
+  worker:
+    cpu: 1
+    memory: 1Gi
+- idle_timeout_s: 30
+  min_workers: 1
+  name: serve-cluster1
+  route_latency:
+    params:
+      loc: 0.003485330525882586
+      scale: 0.000987812095765591
+      shape: 0.4807840738997673
+    type: lognorm
+  worker:
+    cpu: 1
+    memory: 1Gi
+- idle_timeout_s: 30
+  min_workers: 1
+  name: serve-cluster2
+  route_latency:
+    params:
+      loc: 0.003485330525882586
+      scale: 0.000987812095765591
+      shape: 0.4807840738997673
+    type: lognorm
+  worker:
+    cpu: 1
+    memory: 1Gi
+- idle_timeout_s: 30
+  min_workers: 1
+  name: serve-cluster3
+  route_latency:
+    params:
+      loc: 0.003485330525882586
+      scale: 0.000987812095765591
+      shape: 0.4807840738997673
+    type: lognorm
+  worker:
+    cpu: 1
+    memory: 1Gi
+- idle_timeout_s: 30
+  min_workers: 1
+  name: serve-cluster4
+  route_latency:
+    params:
+      loc: 0.003485330525882586
+      scale: 0.000987812095765591
+      shape: 0.4807840738997673
+    type: lognorm
+  worker:
+    cpu: 1
+    memory: 1Gi
+- idle_timeout_s: 30
+  min_workers: 1
+  name: serve-cluster5
+  route_latency:
+    params:
+      loc: 0.003485330525882586
+      scale: 0.000987812095765591
+      shape: 0.4807840738997673
+    type: lognorm
+  worker:
+    cpu: 1
+    memory: 1Gi
+- idle_timeout_s: 30
+  min_workers: 1
+  name: serve-cluster6
+  route_latency:
+    params:
+      loc: 0.003485330525882586
+      scale: 0.000987812095765591
+      shape: 0.4807840738997673
+    type: lognorm
+  worker:
+    cpu: 1
+    memory: 1Gi
+- idle_timeout_s: 30
+  min_workers: 1
+  name: serve-cluster7
+  route_latency:
+    params:
+      loc: 0.003485330525882586
+      scale: 0.000987812095765591
+      shape: 0.4807840738997673
+    type: lognorm
+  worker:
+    cpu: 1
+    memory: 1Gi
+- idle_timeout_s: 30
+  min_workers: 1
+  name: serve-cluster8
+  route_latency:
+    params:
+      loc: 0.003485330525882586
+      scale: 0.000987812095765591
+      shape: 0.4807840738997673
+    type: lognorm
+  worker:
+    cpu: 1
+    memory: 1Gi
+- idle_timeout_s: 30
+  min_workers: 1
+  name: serve-cluster9
+  route_latency:
+    params:
+      loc: 0.003485330525882586
+      scale: 0.000987812095765591
+      shape: 0.4807840738997673
+    type: lognorm
+  worker:
+    cpu: 1
+    memory: 1Gi
+controller: hybrid
+controller_params:
+  cold_start_overhead_s: 35
+  hot_start_overhead_s: 3
+  input_rate_bin_size_s: 60
+  policies:
+  - autoscale_config:
+      backoff_s: 10.0
+      downscale_delay_s: 600.0
+      interval_s: 300.0
+      look_back_period_s: 30.0
+      max_replicas: 100
+      max_trials: 5
+      metric: avg_latency
+      min_replicas: 1
+      target_metric: 720
+      upscale_delay_s: 60.0
+    policy_name: pred_darts_utility
+    policy_params:
+      adjust: false
+      aggregator: none
+      individually: false
+      input_path: ../experiments/top9_twitter_1_1600_avgproc_min_int5m_reduced_6hr_augmented/input.json
+      latency_estimator: max
+      mdc_percentile: 99
+      method: cobyla
+      min_max: 3
+      model_params:
+        serve-cluster0:
+          classifier:
+            model_path: ../models_1600/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1_gaussian/model.pt
+            num_samples: 100
+            quantile: 0.5
+        serve-cluster9:
+          classifier:
+            model_path: ../models_1600/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1_gaussian/model.pt
+            num_samples: 100
+            quantile: 0.5
+        serve-cluster1:
+          classifier:
+            model_path: ../models_1600/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1_gaussian/model.pt
+            num_samples: 100
+            quantile: 0.5
+        serve-cluster2:
+          classifier:
+            model_path: ../models_1600/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1_gaussian/model.pt
+            num_samples: 100
+            quantile: 0.5
+        serve-cluster3:
+          classifier:
+            model_path: ../models_1600/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1_gaussian/model.pt
+            num_samples: 100
+            quantile: 0.5
+        serve-cluster4:
+          classifier:
+            model_path: ../models_1600/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1_gaussian/model.pt
+            num_samples: 100
+            quantile: 0.5
+        serve-cluster5:
+          classifier:
+            model_path: ../models_1600/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1_gaussian/model.pt
+            num_samples: 100
+            quantile: 0.5
+        serve-cluster6:
+          classifier:
+            model_path: ../models_1600/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1_gaussian/model.pt
+            num_samples: 100
+            quantile: 0.5
+        serve-cluster7:
+          classifier:
+            model_path: ../models_1600/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1_gaussian/model.pt
+            num_samples: 100
+            quantile: 0.5
+        serve-cluster8:
+          classifier:
+            model_path: ../models_1600/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1_gaussian/model.pt
+            num_samples: 100
+            quantile: 0.5
+      processing_time: 180
+      resource_limit:
+        cpu: 36
+        memory: 96Gi
+      upscale_overhead: 65
+      util_type: latency
+      window_size_s: 0
+inference_jobs:
+- cluster_name: serve-cluster0
+  latency_dist:
+    params:
+      loc: 0.07930158214998745
+      scale: 0.06858078649769431
+      shape: 0.42247119243841247
+    type: lognorm
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 1
+  resources:
+    cpu: 1
+    memory: 1Gi
+- cluster_name: serve-cluster1
+  latency_dist:
+    params:
+      loc: 0.07930158214998745
+      scale: 0.06858078649769431
+      shape: 0.42247119243841247
+    type: lognorm
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 1
+  resources:
+    cpu: 1
+    memory: 1Gi
+- cluster_name: serve-cluster2
+  latency_dist:
+    params:
+      loc: 0.07930158214998745
+      scale: 0.06858078649769431
+      shape: 0.42247119243841247
+    type: lognorm
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 1
+  resources:
+    cpu: 1
+    memory: 1Gi
+- cluster_name: serve-cluster3
+  latency_dist:
+    params:
+      loc: 0.07930158214998745
+      scale: 0.06858078649769431
+      shape: 0.42247119243841247
+    type: lognorm
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 1
+  resources:
+    cpu: 1
+    memory: 1Gi
+- cluster_name: serve-cluster4
+  latency_dist:
+    params:
+      loc: 0.07930158214998745
+      scale: 0.06858078649769431
+      shape: 0.42247119243841247
+    type: lognorm
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 1
+  resources:
+    cpu: 1
+    memory: 1Gi
+- cluster_name: serve-cluster5
+  latency_dist:
+    params:
+      loc: 0.07930158214998745
+      scale: 0.06858078649769431
+      shape: 0.42247119243841247
+    type: lognorm
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 1
+  resources:
+    cpu: 1
+    memory: 1Gi
+- cluster_name: serve-cluster6
+  latency_dist:
+    params:
+      loc: 0.07930158214998745
+      scale: 0.06858078649769431
+      shape: 0.42247119243841247
+    type: lognorm
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 1
+  resources:
+    cpu: 1
+    memory: 1Gi
+- cluster_name: serve-cluster7
+  latency_dist:
+    params:
+      loc: 0.07930158214998745
+      scale: 0.06858078649769431
+      shape: 0.42247119243841247
+    type: lognorm
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 1
+  resources:
+    cpu: 1
+    memory: 1Gi
+- cluster_name: serve-cluster8
+  latency_dist:
+    params:
+      loc: 0.07930158214998745
+      scale: 0.06858078649769431
+      shape: 0.42247119243841247
+    type: lognorm
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 1
+  resources:
+    cpu: 1
+    memory: 1Gi
+- cluster_name: serve-cluster9
+  latency_dist:
+    params:
+      loc: 0.07930158214998745
+      scale: 0.06858078649769431
+      shape: 0.42247119243841247
+    type: lognorm
+  max_concurrent_queries: 4
+  max_queue_len: 50
+  name: classifier
+  num_replicas: 1
+  resources:
+    cpu: 1
+    memory: 1Gi
+load_specs:
+- params:
+    path: ../experiments/top9_twitter_1_1600_avgproc_min_int5m_reduced_6hr_augmented/input.json
+    poisson: true
+    unit_time: 60
+  type: json
+nodes:
+- name: node-0
+  resources:
+    cpu: 12
+    memory: 32Gi
+- name: node-1
+  resources:
+    cpu: 12
+    memory: 32Gi
+- name: node-2
+  resources:
+    cpu: 12
+    memory: 32Gi
+seed: 42

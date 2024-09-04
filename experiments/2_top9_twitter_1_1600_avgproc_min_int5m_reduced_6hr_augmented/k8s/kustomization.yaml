@@ -1,0 +1,35 @@
+resources:
+  - "cluster0.yaml"
+  - "cluster1.yaml"
+  - "cluster2.yaml"
+  - "cluster3.yaml"
+  - "cluster4.yaml"
+  - "cluster5.yaml"
+  - "cluster6.yaml"
+  - "cluster7.yaml"
+  - "cluster8.yaml"
+  - "cluster9.yaml"
+  - "cluster10.yaml"
+  - "cluster11.yaml"
+  - "cluster12.yaml"
+  - "cluster13.yaml"
+  - "cluster14.yaml"
+  - "cluster15.yaml"
+  - "cluster16.yaml"
+  - "cluster17.yaml"
+  - "cluster18.yaml"
+  - "cluster19.yaml"
+
+patches:
+- path: idle_timeout_patch.yaml
+  target:
+    kind: RayCluster
+- path: custom_image_patch.yaml
+  target:
+    kind: RayCluster
+- path: max_queue_len_patch.yaml
+  target:
+    kind: RayCluster
+- path: resource_patch.yaml
+  target:
+    kind: RayCluster

@@ -1,0 +1,60 @@
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: ray-operator-serviceaccount
+  namespace: k8s-ray
+---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: ray-operator-role
+  namespace: k8s-ray
+rules:
+- apiGroups: ["", "cluster.ray.io"]
+  resources: ["rayclusters", "rayclusters/finalizers", "rayclusters/status", "pods", "pods/exec", "services"]
+  verbs: ["get", "watch", "list", "create", "delete", "patch", "update"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  namespace: k8s-ray
+  name: ray-operator-rolebinding
+subjects:
+- kind: ServiceAccount
+  name: ray-operator-serviceaccount
+roleRef:
+  kind: Role
+  name: ray-operator-role
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ray-operator-pod
+  namespace: k8s-ray
+spec:
+  serviceAccountName: ray-operator-serviceaccount
+  imagePullSecrets:
+  - name: all-icr-io
+  containers:
+  - name: ray
+    imagePullPolicy: Always
+    # image: us.icr.io/faro/custom-ray-pytorch:129ed0a
+    image: beomyeol/custom-ray-pytorch:129ed0a
+    command: ["ray-operator"]
+    env:
+    - name: RAY_OPERATOR_POD_NAMESPACE
+      valueFrom:
+        fieldRef:
+          fieldPath: metadata.namespace
+    - name: UPSCALING_INITIAL_NUM_NODES
+      value: "20"
+    - name: AUTOSCALER_MAX_CONCURRENT_LAUNCHES
+      value: "20"
+    resources:
+      requests:
+        cpu: 1000m
+        memory: 1Gi
+      limits:
+        memory: 2Gi

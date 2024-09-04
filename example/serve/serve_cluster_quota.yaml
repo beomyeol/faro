@@ -1,0 +1,10 @@
+apiVersion: ray.beomyeol.github.io/v1
+kind: ClusterQuota
+metadata:
+  name: serve-cluster-quota
+  namespace: k8s-ray
+spec:
+  clusterName: "serve-cluster"
+  resources:
+    cpu: 3
+    memory: 3Gi

@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/podTypes/0/podConfig/spec/containers/0/resources/requests/memory
+  value: 3Gi
+- op: replace
+  path: /spec/podTypes/1/podConfig/spec/containers/0/resources/requests/cpu
+  value: 800m

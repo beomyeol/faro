@@ -1,0 +1,50 @@
+serve-cluster0:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+    quantile: 0.6
+serve-cluster1:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+    quantile: 0.6
+serve-cluster2:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+    quantile: 0.6
+serve-cluster3:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+    quantile: 0.6
+serve-cluster4:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+    quantile: 0.6
+serve-cluster5:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+    quantile: 0.6
+serve-cluster6:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+    quantile: 0.6
+serve-cluster7:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+    quantile: 0.6
+serve-cluster8:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+    quantile: 0.6
+serve-cluster9:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+    quantile: 0.6

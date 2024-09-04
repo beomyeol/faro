@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: faro-operator
+  namespace: k8s-ray
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      application: faro-operator
+  template:
+    metadata:
+      labels:
+        application: faro-operator
+    spec:
+      serviceAccountName: faro-account
+      imagePullSecrets:
+      - name: all-icr-io
+      containers:
+      - name: faro-operator
+        # image: us.icr.io/faro/faro-operator-1600:c715d73
+        image: beomyeol/faro-operator-1600:c715d73
+        imagePullPolicy: Always
+        command: ["/bin/bash", "-c", "--"]
+        args: ['trap : TERM INT; sleep infinity & wait;']
+        ports:
+          - containerPort: 9443
+        resources:
+          requests:
+            cpu: 4000m
+            memory: 8Gi
+          limits:
+            cpu: 4000m
+            memory: 8Gi

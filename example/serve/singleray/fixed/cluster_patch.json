@@ -1,0 +1,7 @@
+[
+    {
+        "op": "replace",
+        "path": "/spec/podTypes/1/minWorkers",
+        "value": 6
+    }
+]

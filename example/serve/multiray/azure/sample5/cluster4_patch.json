@@ -1,0 +1,12 @@
+[
+    {
+        "op": "replace",
+        "path": "/spec/podTypes/1/minWorkers",
+        "value": 2
+    },
+    {
+        "op": "replace",
+        "path": "/spec/podTypes/1/maxWorkers",
+        "value": 7
+    }
+]

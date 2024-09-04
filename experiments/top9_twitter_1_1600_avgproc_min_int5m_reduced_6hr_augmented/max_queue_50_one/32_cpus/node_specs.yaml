@@ -1,0 +1,2 @@
+- name: node-0
+  resources: !include node_resources_specs.yaml

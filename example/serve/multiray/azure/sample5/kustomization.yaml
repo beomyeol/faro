@@ -1,0 +1,24 @@
+resources:
+  - "../../base"
+
+patches:
+- path: cluster1_patch.json
+  target:
+    kind: RayCluster
+    name: serve-cluster1
+- path: cluster_patch.json
+  target:
+    kind: RayCluster
+    name: serve-cluster2
+- path: cluster_patch.json
+  target:
+    kind: RayCluster
+    name: serve-cluster3
+- path: cluster4_patch.json
+  target:
+    kind: RayCluster
+    name: serve-cluster4
+- path: cluster5_patch.json
+  target:
+    kind: RayCluster
+    name: serve-cluster5

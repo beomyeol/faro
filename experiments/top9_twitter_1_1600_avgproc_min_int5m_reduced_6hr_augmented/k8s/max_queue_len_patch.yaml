@@ -1,0 +1,5 @@
+- op: add
+  path: /spec/podTypes/0/podConfig/spec/containers/0/env
+  value:
+    - name: SERVE_HTTP_MAX_QUEUE_SIZE
+      value: "50"

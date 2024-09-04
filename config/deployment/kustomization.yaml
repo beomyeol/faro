@@ -1,0 +1,4 @@
+resources:
+  - rbac.yaml
+  - operator.yaml
+  # - service.yaml

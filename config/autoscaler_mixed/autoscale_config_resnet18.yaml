@@ -1,0 +1,5 @@
+upscale_delay_s: 30.0
+downscale_delay_s: 600.0
+target_metric: 400
+max_replicas: 100
+min_replicas: 1

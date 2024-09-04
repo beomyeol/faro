@@ -1,0 +1,4 @@
+- name: node-0
+  resources:
+    cpu: 320
+    memory: 1024Gi

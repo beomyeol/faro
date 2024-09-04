@@ -1,0 +1,7 @@
+resources:
+  - "../../clusters/single"
+
+patches:
+  - path: patches.yaml
+    target:
+      kind: RayCluster

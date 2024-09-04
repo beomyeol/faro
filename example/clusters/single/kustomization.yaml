@@ -1,0 +1,7 @@
+resources:
+  - "cluster1.yaml"
+
+patches:
+  - path: idle_timeout_patch.yaml
+    target:
+      kind: RayCluster

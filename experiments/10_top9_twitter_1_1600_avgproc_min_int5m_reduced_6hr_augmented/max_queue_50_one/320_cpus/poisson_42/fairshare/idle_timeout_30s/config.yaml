@@ -1,0 +1,6 @@
+clusters: !include ../../../../../cluster_specs.yaml
+controller: default
+inference_jobs: !include ../../../job_specs_fairshare.yaml
+load_specs: !include ../../../../../load_specs/poisson_42.yaml
+nodes: !include ../../../node_specs.yaml
+seed: 42

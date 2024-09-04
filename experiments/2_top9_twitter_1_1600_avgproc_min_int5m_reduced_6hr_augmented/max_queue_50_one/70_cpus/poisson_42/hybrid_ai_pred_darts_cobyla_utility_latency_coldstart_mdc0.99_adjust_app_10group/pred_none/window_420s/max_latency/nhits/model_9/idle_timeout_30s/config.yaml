@@ -1,0 +1,33 @@
+clusters: !include ../../../../../../../../../../cluster_specs.yaml
+controller: hybrid
+controller_params:
+  cold_start_overhead_s: 35
+  hot_start_overhead_s: 3
+  input_rate_bin_size_s: 60
+  policies:
+  - autoscale_config: !include ../../../../../../../../../../pred_autoscale_config.yaml
+    policy_name: pred_darts_utility
+    policy_params:
+      adjust: true
+      aggregator: none
+      individually: false
+      input_path: ../experiments/2_top9_twitter_1_1600_avgproc_min_int5m_reduced_6hr_augmented/input.json
+      latency_estimator: max
+      mdc_percentile: 99
+      method: cobyla
+      hierarchical: 10
+      slack_resources:
+        cpu: 0
+        memory: 1Gi
+      model_params: !include ../../../../../../../../../../model_params/darts/nhits/model_9.yaml
+      processing_time: 180
+      resource_limit: !include ../../../../../../../../node_resources_specs.yaml
+      upscale_overhead: 65
+      util_type: latency
+      window_size_s: 420
+  - autoscale_config: !include ../../../../../../../../../../autoscale_config.yaml
+    policy_name: ai
+inference_jobs: !include ../../../../../../../../../job_specs.yaml
+load_specs: !include ../../../../../../../../../../load_specs/poisson_42.yaml
+nodes: !include ../../../../../../../../node_specs.yaml
+seed: 42

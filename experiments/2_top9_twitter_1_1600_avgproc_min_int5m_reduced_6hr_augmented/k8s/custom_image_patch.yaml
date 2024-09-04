@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/podTypes/0/podConfig/spec/containers/0/image
+  value: us.icr.io/faro/custom-ray-pytorch:557cb6e
+- op: replace
+  path: /spec/podTypes/1/podConfig/spec/containers/0/image
+  value: us.icr.io/faro/custom-ray-pytorch:557cb6e

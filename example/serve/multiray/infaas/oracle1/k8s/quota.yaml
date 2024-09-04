@@ -1,0 +1,54 @@
+apiVersion: ray.beomyeol.github.io/v1
+kind: ClusterQuota
+metadata:
+  name: serve-cluster1-quota
+  namespace: k8s-ray
+spec:
+  clusterName: "serve-cluster1"
+  resources:
+    cpu: 2
+    memory: 8Gi
+---
+apiVersion: ray.beomyeol.github.io/v1
+kind: ClusterQuota
+metadata:
+  name: serve-cluster2-quota
+  namespace: k8s-ray
+spec:
+  clusterName: "serve-cluster2"
+  resources:
+    cpu: 2
+    memory: 8Gi
+---
+apiVersion: ray.beomyeol.github.io/v1
+kind: ClusterQuota
+metadata:
+  name: serve-cluster3-quota
+  namespace: k8s-ray
+spec:
+  clusterName: "serve-cluster3"
+  resources:
+    cpu: 2
+    memory: 8Gi
+---
+apiVersion: ray.beomyeol.github.io/v1
+kind: ClusterQuota
+metadata:
+  name: serve-cluster4-quota
+  namespace: k8s-ray
+spec:
+  clusterName: "serve-cluster4"
+  resources:
+    cpu: 2
+    memory: 8Gi
+---
+apiVersion: ray.beomyeol.github.io/v1
+kind: ClusterQuota
+metadata:
+  name: serve-cluster5-quota
+  namespace: k8s-ray
+spec:
+  clusterName: "serve-cluster5"
+  resources:
+    cpu: 2
+    memory: 8Gi

@@ -1,0 +1,19 @@
+interval_s: 10.0
+upscale_delay_s: 30.0
+downscale_delay_s: 600.0
+metric: avg_latency
+target_metric: 720
+max_replicas: 100
+min_replicas: 1
+look_back_period_s: 30.0
+cluster_configs:
+  serve-cluster0-ray-head: !include autoscale_config_resnet18.yaml
+  serve-cluster1-ray-head: !include autoscale_config_resnet34.yaml
+  serve-cluster2-ray-head: !include autoscale_config_resnet18.yaml
+  serve-cluster3-ray-head: !include autoscale_config_resnet34.yaml
+  serve-cluster4-ray-head: !include autoscale_config_resnet18.yaml
+  serve-cluster5-ray-head: !include autoscale_config_resnet34.yaml
+  serve-cluster6-ray-head: !include autoscale_config_resnet18.yaml
+  serve-cluster7-ray-head: !include autoscale_config_resnet34.yaml
+  serve-cluster8-ray-head: !include autoscale_config_resnet18.yaml
+  serve-cluster9-ray-head: !include autoscale_config_resnet34.yaml

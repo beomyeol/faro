@@ -1,0 +1,8 @@
+resources:
+  - "../all"
+
+patches:
+- path: cluster_patch.json
+  target:
+    kind: RayCluster
+    name: serve-cluster1

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: replayer
+  namespace: k8s-ray
+  labels:
+    name: replayer
+spec:
+  containers:
+  - name: replayer
+    image: beomyeol/replayer:81e0fca
+    imagePullPolicy: IfNotPresent
+    command: ["/bin/bash", "-c", "--"]
+    args: ['trap : TERM INT; sleep infinity & wait;']
+    resources:
+      requests:
+        memory: "3Gi"
+        cpu: 2000m
+      limits:
+        memory: "3Gi"
+        cpu: 2000m

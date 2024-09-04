@@ -1,0 +1,400 @@
+serve-cluster0:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster1:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster2:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster3:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster4:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster5:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster6:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster7:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster8:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster9:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster10:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster11:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster12:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster13:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster14:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster15:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster16:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster17:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster18:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster19:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster20:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster21:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster22:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster23:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster24:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster25:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster26:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster27:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster28:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster29:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster30:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster31:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster32:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster33:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster34:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster35:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster36:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster37:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster38:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster39:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster40:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster41:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster42:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster43:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster44:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster45:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster46:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster47:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster48:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster49:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster50:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster51:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster52:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster53:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster54:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster55:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster56:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster57:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster58:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster59:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster60:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster61:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster62:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster63:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster64:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster65:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster66:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster67:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster68:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster69:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster70:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster71:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster72:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster73:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster74:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster75:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster76:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster77:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster78:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster79:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster80:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster81:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster82:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster83:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster84:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster85:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster86:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster87:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster88:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster89:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster90:
+  classifier:
+    model_path: ../models_1600_wo_prob/0/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster91:
+  classifier:
+    model_path: ../models_1600_wo_prob/1/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster92:
+  classifier:
+    model_path: ../models_1600_wo_prob/2/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster93:
+  classifier:
+    model_path: ../models_1600_wo_prob/3/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster94:
+  classifier:
+    model_path: ../models_1600_wo_prob/4/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster95:
+  classifier:
+    model_path: ../models_1600_wo_prob/5/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster96:
+  classifier:
+    model_path: ../models_1600_wo_prob/6/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster97:
+  classifier:
+    model_path: ../models_1600_wo_prob/7/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster98:
+  classifier:
+    model_path: ../models_1600_wo_prob/8/darts/clen=10_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1
+serve-cluster99:
+  classifier:
+    model_path: ../models_1600_wo_prob/9/darts/clen=15_plen=7/nhits/bs=32_lr=0.0001/b=1_s=3_l=2_lw=512_do=0.1/model.pt
+    num_samples: 1

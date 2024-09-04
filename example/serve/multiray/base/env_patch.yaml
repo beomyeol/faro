@@ -1,0 +1,14 @@
+- op: add
+  path: /spec/podTypes/0/podConfig/spec/containers/0/env
+  value:
+  - name: LOOK_BACK_PERIOD_S
+    value: "30.0"
+  - name: INTERVAL_S
+    value: "10.0"
+- op: add
+  path: /spec/podTypes/1/podConfig/spec/containers/0/env
+  value:
+  - name: LOOK_BACK_PERIOD_S
+    value: "30.0"
+  - name: INTERVAL_S
+    value: "10.0"
